@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Heder</title>
+  </head>
+  <body>
+  <header class="header">
+    <div class="container">
+      <div class="header__top">
+        <img class="header__logo" src="../images/header__logo.svg">
+        <div class="header__call">
+          <p class="header__call--number">+7 (831) 2-000-000</p>
+          <span><a class="header__call--request" href="">Заказать звонок</a></span>
+
+          <!-- Модальное окно для заказа звонка -->
+
+
+        </div>
+        <div class="header__location">
+          <img class="header__location--icon" src="../images/location.svg">
+          <a class="header__location--link" href="">Минеральные Воды</a>
+        </div>
+        <form action="">
+          <input class="header__search" type="text" placeholder="Поиск по сайту">
+          <!-- <label for="header__search">
+            <img src="../images/search.svg" alt="">
+          </label> -->
+        </form>
+      </div>
+        <ul class="header__nav">
+          <li class="header__nav-item"><a class="header__nav-item--link" href="">Каталог продукции</a></li>
+          <li class="header__nav-item"><a class="header__nav-item--link" href="">Бренды</a></li>
+          <li class="header__nav-item"><a class="header__nav-item--link" href="">Сервис и запасные части</a></li>
+          <li class="header__nav-item"><a class="header__nav-item--link" href="">Акции</a></li>
+          <li class="header__nav-item"><a class="header__nav-item--link" href="">Услуги</a></li>
+          <li class="header__nav-item"><a class="header__nav-item--link" href="">О компании</a></li>
+          <li class="header__nav-item"><a class="header__nav-item--link" href="">Контакты</a></li>
+        </ul>
+    </div>
+  </header>
+  <!-- Slider main container -->
+<div class="swiper swiper-banner">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide swiper-banner__item"><img src="../images/banner.png" alt=""></div>
+    <div class="swiper-slide swiper-banner__item"><img src="../images/banner.png" alt=""></div>
+    <div class="swiper-slide swiper-banner__item"><img src="../images/banner.png" alt=""></div>
+    <div class="swiper-slide swiper-banner__item"><img src="../images/banner.png" alt=""></div>
+    <div class="swiper-slide swiper-banner__item"><img src="../images/banner.png" alt=""></div>
+    <div class="swiper-slide swiper-banner__item"><img src="../images/banner.png" alt=""></div>
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need scrollbar -->
+  <!-- <div class="swiper-scrollbar"></div> -->
+</div>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
