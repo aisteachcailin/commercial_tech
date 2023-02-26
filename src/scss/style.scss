@@ -99,77 +99,121 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 /*products*/
 
 .products {
-  height: 582px;
-  width: 1307px;
+  width: 1325px;
   margin: 47px auto;
+  position: relative;
+  color: $dark;
     &__title {
       font-weight: 500;
       font-size: 28px;
       line-height: 137.2%;
       color: #333333;
+      margin-left: 42px;
     }
 }
 
 /*slider for products*/
-.swiper-product {
-  margin-top: 41px;
-    &__item {
-      width: 293px;
-      border: 1px solid $yellow;
-      color: $dark;
-        &-text {
-          margin: 19px 24px 25px;
-        }
-        &--title {
-          font-weight: 500;
-          line-height: 20px;
-        }
-        &--description {
-          font-size: 14px;
-          font-weight: 400;
-          line-height: 17px;
-          margin-top: 12px;
-        }
-        &-prices {
-          margin: 13px auto 28px;
-          display: flex;
-          height: 23px;
-          align-items: baseline;
-            &--old {
-              margin-left: 12px;
-            }
-            &--new {
-              font-weight: 500;
-              font-size: 20px;
-            }
-        }
-        &-availability {
-          display: flex;
-          align-items: flex-start;
-            &--text {
-              font-weight: 400;
-              font-size: 12px;
-              line-height: 15px;
-              padding-left: 8px;
-            }
-            img &--cart {
-              width: 20px;
-              height: 18.5px;
-            }
-        }
-        &-button {
-          margin-top: 16.5px;
-          background-color: #FAB72A;
-          border: none;
-          width: 247px;
-          height: 42px;
-          font-weight: 600;
-          font-size: 14px;
-          color: #333333;
-            &--arrow {
-              margin-left: 8.25px;
-            }
-        }
 
+.swiper-product {
+  margin-top: 28px;
+  width: 1241px;
+    &__item {
+      position: relative;
+        &-additional-info {
+          position: absolute;
+          top: -13px;
+          left: 141px;
+          display: flex;
+          justify-content: space-between;
+          width: 137px;
+            &--leasing, &--owner {
+              height: 26px;
+              font-weight: 600;
+              font-size: 11px;
+              display: flex;
+              align-items: center;
+              align-content: center;
+              justify-content: center;
+            }
+            &--leasing {
+              background-color: $yellow;
+              width: 61px;
+            }
+            &--owner {
+              background-color: $grey;
+              width: 67px;
+              color: $white;
+            }
+        }
+        &-main {
+          width: 293px;
+          border: 1px solid $yellow;
+          margin-top: 13px;
+            &-text {
+              margin: 19px 24px 25px;
+            }
+            &--title {
+              font-weight: 500;
+              line-height: 20px;
+            }
+            &--description {
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 17px;
+              margin-top: 12px;
+            }
+            &-prices {
+              margin: 13px auto 28px;
+              display: flex;
+              height: 23px;
+              align-items: baseline;
+                &--old {
+                  margin-left: 12px;
+                }
+                &--new {
+                  font-weight: 500;
+                  font-size: 20px;
+                }
+            }
+            &-availability {
+              display: flex;
+              align-items: flex-start;
+                &--text {
+                  font-weight: 400;
+                  font-size: 12px;
+                  line-height: 15px;
+                  padding-left: 8px;
+                }
+                img &--cart {
+                  width: 20px;
+                  height: 18.5px;
+                }
+            }
+            &-button {
+              margin-top: 16.5px;
+              background-color: #FAB72A;
+              border: none;
+              width: 247px;
+              height: 42px;
+              font-weight: 600;
+              font-size: 14px;
+              color: #333333;
+                &--arrow {
+                  margin-left: 8.25px;
+                }
+            }
+        }
     }
+}
+
+/*arrows*/
+img.swiper-button-next, img.swiper-button-prev {
+  margin-top: 17.64px;
+  width: 9px;
+  height: 18.24px;
+}
+.swiper-button {
+  &-next {
+    transform: rotate(180deg);
+  }
 }

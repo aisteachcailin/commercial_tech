@@ -10,7 +10,7 @@
     <title>Product of day</title>
   </head>
   <body>
-    <div class="container products">
+    <div class="products">
       <h3 class="products__title">Товар дня</h3>
       <!-- Slider main container -->
       <div class="swiper swiper-product">
@@ -19,112 +19,167 @@
           <!-- Slides -->
           <div class="swiper-slide">
             <div class="swiper-product__item">
-              <!-- <div class="swiper-product__item-additional-info">
-                <div class="swiper-product__item-info--leasing">Лизинг</div>
-                <div class="swiper-product__item-info--owner">1 Хозяин</div>
-              </div> -->
-              <img src="../images/DAEWOO NOVUS.png" alt="">
-              <div class="swiper-product__item-text">
-                <h4 class="swiper-product__item--title">ГАЗ Промтоварный фургон на базе ГАЗон NEXT</h4>
-                <p class="swiper-product__item--description">Шасси, 5.9 л / 270 л. с., Задний привод, МКПП, Дизельный</p>
-                <div class="swiper-product__item-prices">
-
+              <div class="swiper-product__item-additional-info">
+                <div class="swiper-product__item-additional-info--leasing">Лизинг</div>
+                <div class="swiper-product__item-additional-info--owner">1 Хозяин</div>
+              </div>
+              <div class="swiper-product__item-main">
+                <img src="../images/DAEWOO NOVUS.png" alt="">
+                <div class="swiper-product__item-main-text">
+                  <h4 class="swiper-product__item-main--title">ГАЗ Промтоварный фургон на базе ГАЗон NEXT</h4>
+                  <p class="swiper-product__item-main--description">Шасси, 5.9 л / 270 л. с., Задний привод, МКПП, Дизельный</p>
+                  <div class="swiper-product__item-main-prices"></div>
+                  <div class="swiper-product__item-main-availability">
+                    <img class="swiper-product__item-main-availability--cart" src="../images/cart.svg" alt="">
+                    <p class="swiper-product__item-main-availability--text">Доступна для заказа</p>
+                  </div>
+                  <button class="swiper-product__item-main-button">Узнать цену
+                    <img class="swiper-product__item-main-button--arrow" src="../images/button__arrow.svg" alt="">
+                  </button>
                 </div>
-                <div class="swiper-product__item-availability">
-                  <img class="swiper-product__item-availability--cart" src="../images/cart.svg" alt="">
-                  <p class="swiper-product__item-availability--text">Доступна для заказа</p>
-                </div>
-                <button class="swiper-product__item-button">Узнать цену
-                  <img class="swiper-product__item-button--arrow" src="../images/button__arrow.svg" alt="">
-                </button>
               </div>
             </div>
           </div>
 
           <div class="swiper-slide">
             <div class="swiper-product__item">
-              <!-- <div class="swiper-product__item-info">
-                <div class="swiper-product__item-info--leasing">Лизинг</div>
-                <div class="swiper-product__item-info--owner">1 Хозяин</div>
-              </div> -->
-              <img src="../images/Самосвал.png" alt="">
-              <div class="swiper-product__item-text">
-                <h4 class="swiper-product__item--title">ГАЗ Промтоварный фургон на базе ГАЗон NEXT</h4>
-                <p class="swiper-product__item--description">Шасси, 5.9 л / 270 л. с., Задний привод, МКПП, Дизельный</p>
-                <div class="swiper-product__item-prices">
-                  <p class="swiper-product__item-prices--new">6 239 000 Р</p>
-                  <s class="swiper-product__item-prices--old">7 239 000 Р</s>
-                </div>
-                <div class="swiper-product__item-availability">
-                  <img class="swiper-product__item-availability--cart" src="../images/cart.svg" alt="">
-                  <p class="swiper-product__item-availability--text">Доступна для заказа</p>
-                </div>
-                <button class="swiper-product__item-button">Оставить заявку
-                  <img class="swiper-product__item-button--arrow" src="../images/button__arrow.svg" alt="">
-                </button>
+              <div class="swiper-product__item-additional-info">
+                <div class="swiper-product__item-additional-info--leasing">Лизинг</div>
+                <div class="swiper-product__item-additional-info--owner">1 Хозяин</div>
               </div>
-
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="swiper-product__item">
-              <!-- <div class="swiper-product__item-additional-info">
-                <div class="swiper-product__item-info--leasing">Лизинг</div>
-                <div class="swiper-product__item-info--owner">1 Хозяин</div>
-              </div> -->
-              <img src="../images/DAEWOO NOVUS.png" alt="">
-              <div class="swiper-product__item-text">
-                <h4 class="swiper-product__item--title">ГАЗ Промтоварный фургон на базе ГАЗон NEXT</h4>
-                <p class="swiper-product__item--description">Шасси, 5.9 л / 270 л. с., Задний привод, МКПП, Дизельный</p>
-                <div class="swiper-product__item-prices">
-
+              <div class="swiper-product__item-main">
+                <img src="../images/Самосвал.png" alt="">
+                <div class="swiper-product__item-main-text">
+                  <h4 class="swiper-product__item-main--title">ГАЗ Промтоварный фургон на базе ГАЗон NEXT</h4>
+                  <p class="swiper-product__item-main--description">Шасси, 5.9 л / 270 л. с., Задний привод, МКПП, Дизельный</p>
+                  <div class="swiper-product__item-main-prices">
+                    <p class="swiper-product__item-main-prices--new">6 239 000 Р</p>
+                    <s class="swiper-product__item-main-prices--old">7 239 000 Р</s>
+                  </div>
+                  <div class="swiper-product__item-main-availability">
+                    <img class="swiper-product__item-main-availability--cart" src="../images/cart.svg" alt="">
+                    <p class="swiper-product__item-main-availability--text">Доступна для заказа</p>
+                  </div>
+                  <button class="swiper-product__item-main-button">Оставить заявку
+                    <img class="swiper-product__item-main-button--arrow" src="../images/button__arrow.svg" alt="">
+                  </button>
                 </div>
-                <div class="swiper-product__item-availability">
-                  <img class="swiper-product__item-availability--cart" src="../images/cart.svg" alt="">
-                  <p class="swiper-product__item-availability--text">Доступна для заказа</p>
-                </div>
-                <button class="swiper-product__item-button">Узнать цену
-                  <img class="swiper-product__item-button--arrow" src="../images/button__arrow.svg" alt="">
-                </button>
               </div>
             </div>
           </div>
 
           <div class="swiper-slide">
             <div class="swiper-product__item">
-              <!-- <div class="swiper-product__item-info">
-                <div class="swiper-product__item-info--leasing">Лизинг</div>
-                <div class="swiper-product__item-info--owner">1 Хозяин</div>
-              </div> -->
-              <img src="../images/Самосвал.png" alt="">
-              <div class="swiper-product__item-text">
-                <h4 class="swiper-product__item--title">ГАЗ Промтоварный фургон на базе ГАЗон NEXT</h4>
-                <p class="swiper-product__item--description">Шасси, 5.9 л / 270 л. с., Задний привод, МКПП, Дизельный</p>
-                <div class="swiper-product__item-prices">
-                  <p class="swiper-product__item-prices--new">6 239 000 Р</p>
-                  <s class="swiper-product__item-prices--old">7 239 000 Р</s>
-                </div>
-                <div class="swiper-product__item-availability">
-                  <img class="swiper-product__item-availability--cart" src="../images/cart.svg" alt="">
-                  <p class="swiper-product__item-availability--text">Доступна для заказа</p>
-                </div>
-                <button class="swiper-product__item-button">Оставить заявку
-                  <img class="swiper-product__item-button--arrow" src="../images/button__arrow.svg" alt="">
-                </button>
+              <div class="swiper-product__item-additional-info">
+                <div class="swiper-product__item-additional-info--leasing">Лизинг</div>
+                <div class="swiper-product__item-additional-info--owner">1 Хозяин</div>
               </div>
+              <div class="swiper-product__item-main">
+                <img src="../images/DAEWOO NOVUS.png" alt="">
+                <div class="swiper-product__item-main-text">
+                  <h4 class="swiper-product__item-main--title">ГАЗ Промтоварный фургон на базе ГАЗон NEXT</h4>
+                  <p class="swiper-product__item-main--description">Шасси, 5.9 л / 270 л. с., Задний привод, МКПП, Дизельный</p>
+                  <div class="swiper-product__item-main-prices"></div>
+                  <div class="swiper-product__item-main-availability">
+                    <img class="swiper-product__item-main-availability--cart" src="../images/cart.svg" alt="">
+                    <p class="swiper-product__item-main-availability--text">Доступна для заказа</p>
+                  </div>
+                  <button class="swiper-product__item-main-button">Узнать цену
+                    <img class="swiper-product__item-main-button--arrow" src="../images/button__arrow.svg" alt="">
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
 
+          <div class="swiper-slide">
+            <div class="swiper-product__item">
+              <div class="swiper-product__item-additional-info">
+                <div class="swiper-product__item-additional-info--leasing">Лизинг</div>
+                <div class="swiper-product__item-additional-info--owner">1 Хозяин</div>
+              </div>
+              <div class="swiper-product__item-main">
+                <img src="../images/Самосвал.png" alt="">
+                <div class="swiper-product__item-main-text">
+                  <h4 class="swiper-product__item-main--title">ГАЗ Промтоварный фургон на базе ГАЗон NEXT</h4>
+                  <p class="swiper-product__item-main--description">Шасси, 5.9 л / 270 л. с., Задний привод, МКПП, Дизельный</p>
+                  <div class="swiper-product__item-main-prices">
+                    <p class="swiper-product__item-main-prices--new">6 239 000 Р</p>
+                    <s class="swiper-product__item-main-prices--old">7 239 000 Р</s>
+                  </div>
+                  <div class="swiper-product__item-main-availability">
+                    <img class="swiper-product__item-main-availability--cart" src="../images/cart.svg" alt="">
+                    <p class="swiper-product__item-main-availability--text">Доступна для заказа</p>
+                  </div>
+                  <button class="swiper-product__item-main-button">Оставить заявку
+                    <img class="swiper-product__item-main-button--arrow" src="../images/button__arrow.svg" alt="">
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="swiper-product__item">
+              <div class="swiper-product__item-additional-info">
+                <div class="swiper-product__item-additional-info--leasing">Лизинг</div>
+                <div class="swiper-product__item-additional-info--owner">1 Хозяин</div>
+              </div>
+              <div class="swiper-product__item-main">
+                <img src="../images/DAEWOO NOVUS.png" alt="">
+                <div class="swiper-product__item-main-text">
+                  <h4 class="swiper-product__item-main--title">ГАЗ Промтоварный фургон на базе ГАЗон NEXT</h4>
+                  <p class="swiper-product__item-main--description">Шасси, 5.9 л / 270 л. с., Задний привод, МКПП, Дизельный</p>
+                  <div class="swiper-product__item-main-prices"></div>
+                  <div class="swiper-product__item-main-availability">
+                    <img class="swiper-product__item-main-availability--cart" src="../images/cart.svg" alt="">
+                    <p class="swiper-product__item-main-availability--text">Доступна для заказа</p>
+                  </div>
+                  <button class="swiper-product__item-main-button">Узнать цену
+                    <img class="swiper-product__item-main-button--arrow" src="../images/button__arrow.svg" alt="">
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="swiper-product__item">
+              <div class="swiper-product__item-additional-info">
+                <div class="swiper-product__item-additional-info--leasing">Лизинг</div>
+                <div class="swiper-product__item-additional-info--owner">1 Хозяин</div>
+              </div>
+              <div class="swiper-product__item-main">
+                <img src="../images/Самосвал.png" alt="">
+                <div class="swiper-product__item-main-text">
+                  <h4 class="swiper-product__item-main--title">ГАЗ Промтоварный фургон на базе ГАЗон NEXT</h4>
+                  <p class="swiper-product__item-main--description">Шасси, 5.9 л / 270 л. с., Задний привод, МКПП, Дизельный</p>
+                  <div class="swiper-product__item-main-prices">
+                    <p class="swiper-product__item-main-prices--new">6 239 000 Р</p>
+                    <s class="swiper-product__item-main-prices--old">7 239 000 Р</s>
+                  </div>
+                  <div class="swiper-product__item-main-availability">
+                    <img class="swiper-product__item-main-availability--cart" src="../images/cart.svg" alt="">
+                    <p class="swiper-product__item-main-availability--text">Доступна для заказа</p>
+                  </div>
+                  <button class="swiper-product__item-main-button">Оставить заявку
+                    <img class="swiper-product__item-main-button--arrow" src="../images/button__arrow.svg" alt="">
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
 
         </div>
 
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
 
       </div>
+
+              <!-- If we need navigation buttons -->
+              <img class="swiper-button-prev" src="../images/product-slider__arrow.svg" alt="">
+              <img class="swiper-button-next" src="../images/product-slider__arrow.svg" alt="">
     </div>
+
     <script type="module" src="./js/main.js"></script>
   </body>
 </html>
