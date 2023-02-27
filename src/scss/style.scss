@@ -2,6 +2,8 @@ $grey: #545454;
 $white: #fff;
 $yellow: #FAB72A;
 $dark: #333333;
+$bc-products: #F5F5F5;
+$bc-certificates: #F6F6F6;
 
 * {
   margin: 0;
@@ -13,6 +15,30 @@ $dark: #333333;
 .container {
   max-width: 1241px;
   margin: 0 auto;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 137.2%;
+  color: #333333;
+}
+
+/*swiper slider*/
+
+.swiper-button {
+  &-next {
+    transform: rotate(180deg);
+  }
+  &-next.swiper-button-disabled, &-prev.swiper-button-disabled {
+      opacity: 1 !important;
+  }
+}
+
+img.swiper-button-next, img.swiper-button-prev {
+  margin: 17.64px -10px 0;
+  width: 9px;
+  height: 18.24px;
 }
 
 /*header*/
@@ -104,27 +130,32 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 
 /*products*/
 
+.container-products {
+  background-color: $bc-products;
+  height: 725px;
+}
 .products {
-  width: 1325px;
-  margin: 47px auto;
+  width: 1307px;
+  margin: auto;
   position: relative;
   color: $dark;
     &__title {
-      font-weight: 500;
-      font-size: 28px;
-      line-height: 137.2%;
-      color: #333333;
-      margin-left: 42px;
+      margin-left: 25px;
+      padding-top: 47px;
+    }
+
+    /*slider for products*/
+    img.swiper-button-next, img.swiper-button-prev {
+      margin-top: 17.64px;
     }
 }
-
-/*slider for products*/
 
 .swiper-product {
   margin-top: 28px;
   width: 1241px;
     &__item {
       position: relative;
+      background-color: $white;
         &-additional-info {
           position: absolute;
           top: -13px;
@@ -204,6 +235,12 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
               font-weight: 600;
               font-size: 14px;
               color: #333333;
+                &:hover {
+                  border: 1px solid $dark;
+                }
+                &:active {
+                  border: 2px solid $dark;
+                }
                 &--arrow {
                   margin-left: 8.25px;
                 }
@@ -212,17 +249,28 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     }
 }
 
-/*arrows*/
-img.swiper-button-next, img.swiper-button-prev {
-  margin-top: 17.64px;
-  width: 9px;
-  height: 18.24px;
+/*certificates*/
+
+.container-certificates {
+  background-color: $bc-certificates;
+  height: 464px;
 }
-.swiper-button {
-  &-next {
-    transform: rotate(180deg);
-  }
-  &-next.swiper-button-disabled, &-prev.swiper-button-disabled {
-      opacity: 1 !important;
-  }
+.certificates {
+  width: 1239px;
+  margin: auto;
+  position: relative;
+    &__title {
+      padding-top: 47px;
+    }
+}
+
+/*slider for certificates*/
+
+.swiper-certificate{
+  width: 860px;
+  margin-top: 28px;
+    &__item img {
+      height: 294px;
+      width: 210px;
+    }
 }

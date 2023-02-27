@@ -7,9 +7,20 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-// init Swiper:
+const swiperBanner = new Swiper('.swiper-banner', {
+  modules: [Pagination],
+  direction: 'horizontal',
+
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  slidesPerView: 1,
+
+});
+
 const swiperProduct = new Swiper('.swiper-product', {
-  // configure Swiper to use modules
   modules: [Navigation],
   direction: 'horizontal',
 
@@ -23,15 +34,17 @@ const swiperProduct = new Swiper('.swiper-product', {
 
 });
 
-const swiperBanner = new Swiper('.swiper-banner', {
-  modules: [Pagination],
+const swiperCertificate = new Swiper('.swiper-certificate', {
+  // configure Swiper to use modules
+  modules: [Navigation],
   direction: 'horizontal',
 
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
 
-  slidesPerView: 1,
+  slidesPerView: 3,
+  spaceBetween: 125,
 
 });
