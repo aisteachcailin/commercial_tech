@@ -61,9 +61,6 @@ img.swiper-button-next, img.swiper-button-prev {
 
 .header {
   background-color: $grey;
-  a, p {
-    color: $white;
-  }
   &__top {
       display: flex;
       align-items: center;
@@ -81,6 +78,7 @@ img.swiper-button-next, img.swiper-button-prev {
       &--number {
         font-weight: 600;
         font-size: 24px;
+        color: $white;
       }
       span &--request {
         float: right;
@@ -95,6 +93,9 @@ img.swiper-button-next, img.swiper-button-prev {
     width: 164.14px;
     display: flex;
     justify-content: space-between;
+      &--link {
+        color: $white;
+      }
       &--icon {
         width: 10.26px;
         height: 15.95px;
@@ -106,22 +107,70 @@ img.swiper-button-next, img.swiper-button-prev {
     height: 42px;
     font-size: 14px;
     padding-left: 15px;
+    background-image: url('../images/search.svg');
+    background-repeat: no-repeat;
+    background-position: 370px 12px;
+    outline: none;
   }
   &__nav {
     list-style: none;
     display: flex;
-    width: 1211px;
+    width: 1191px;
     margin-top: 28px;
-    padding-bottom: 31px;
     justify-content: space-between;
-    &-item--link {
-      text-decoration: none;
-      transition: 0.2s;
-      font-size: 18px;
+    &-item {
+      &--link {
+        text-decoration: none;
+        transition: 0.2s;
+        font-size: 18px;
+        color: $white;
+        &:hover {
+          color: $yellow;
+          text-decoration: underline;
+        }
+      }
+
+/*dropdown for brands*/
+
+      &-brands {
+        position: relative;
+        z-index: 2;
+        padding: 0 10px 31px;
+          &:hover ul {
+            display: block;
+          }
+          &:hover .header__nav-item--link {
+            text-decoration: underline;
+            color: $yellow;
+          }
+      }
     }
-    :hover {
-      color: $yellow;
-      text-decoration: underline;
+    &__brands {
+      list-style: none;
+      color: $dark;
+      font-size: 14px;
+      width: 291px;
+      height: 344px;
+      background-color: $white;
+      position: absolute;
+      left: 63px;
+      margin-top: 22px;
+      display: none;
+        &-item {
+          margin: 28px 0 28px 31px;
+          cursor: pointer;
+            &--link:hover {
+            font-weight: 500;
+            }
+        }
+        .triangle {
+            border-left: 18px solid transparent;
+            border-right: 18px solid transparent;
+            border-bottom: 26px solid $white;
+            position: absolute;
+            left: 10px;
+            top: -9px;
+        }
     }
   }
 }
@@ -261,8 +310,6 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
       margin-top: 17.64px;
     }
 }
-
-
 
 /*certificates*/
 
