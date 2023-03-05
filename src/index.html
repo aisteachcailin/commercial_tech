@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
-    <title>Heder</title>
+    <title>Header</title>
   </head>
   <body>
   <header class="header">
@@ -15,12 +15,34 @@
         <img class="header__logo" src="../images/header__logo.svg">
         <div class="header__call">
           <p class="header__call--number">+7 (831) 2-000-000</p>
-          <span><a class="header__call--request" href="">Заказать звонок</a></span>
-
-          <!-- Модальное окно для заказа звонка -->
-
-
+          <span><a class="header__call--request" data-fancybox data-src="#call-modal">Заказать звонок</a></span>
         </div>
+
+        <!-- Модальное окно для заказа звонка -->
+        <div class="call-modal" id="call-modal">
+          <div class="call-modal__top">
+            <h2 class="call-modal__top--title">Заказать звонок</h2>
+            <img class="call-modal__top--close" src="../images/close.svg" data-fancybox-close>
+          </div>
+          <form action="call-modal__form">
+            <div class="input-box">
+              <input type="text" class="call-modal__form--input" id="field_name" placeholder="Имя*" pattern="^[A-Za-zА-Яа-яЁё\s]+$" required>
+              <label for="field_name" class="requirements">Ошибочка вышла</label>
+            </div>
+            <div class="input-box">
+              <input type="text" class="call-modal__form--input" id="field_number" placeholder="Телефон*" pattern="[0-9]{11}" required>
+              <label for="field_number" class="requirements">Ошибочка вышла</label>
+            </div>
+            <div class="call-modal__form__bottom">
+              <div class="call-modal__form__bottom__agreement form-agreement">
+                <input type="checkbox" class="call-modal__form__bottom__agreement--checkbox" id="agreement" required>
+                <label for="agreement" class="call-modal__form__bottom__agreement--label">Даю согласие на обработку персональных данных</label>
+              </div>
+              <button class="call-modal__form__bottom--button">Заказать звонок</button>
+            </div>
+          </form>
+        </div>
+
         <div class="header__location">
           <img class="header__location--icon" src="../images/location.svg">
           <a class="header__location--link" href="">Минеральные Воды</a>

@@ -6,6 +6,7 @@ $bc-products: #F5F5F5;
 $bc-certificates: #F6F6F6;
 $bc-footer__feedback: #545454;
 $footer-border: #D9D9D9;
+$call-modal__input: #DADADA;
 
 %button-behavior {
   &:hover {
@@ -13,6 +14,15 @@ $footer-border: #D9D9D9;
   }
   &:active {
     border: 2px solid $dark;
+  }
+}
+
+%validation {
+  &:invalid:focus {
+    border: 1px solid $yellow;
+    &+label{
+      opacity: 1;
+    }
   }
 }
 
@@ -57,6 +67,56 @@ img.swiper-button-next, img.swiper-button-prev {
   height: 18.24px;
 }
 
+/*form*/
+
+.form-agreement {
+  display: flex;
+  align-items: center;
+
+  input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+      &+label {
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+      }
+      &+label::before {
+        content: '';
+        width: 20px;
+        height: 20px;
+        background-color: $white;
+        margin-right: 8px;
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+      &:checked+label::before {
+        border: none;
+        background-color: $yellow;
+        background-image: url('../../images/check.svg');
+      }
+
+  }
+  label {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+      &:hover {
+        text-decoration-line: underline;
+      }
+  }
+}
+
+.requirements {
+  display: block;
+  color: $yellow;
+  margin-top: 7px;
+  font-size: 12px;
+  line-height: 120%;
+  opacity: 0;
+}
+
 /*header*/
 
 .header {
@@ -85,6 +145,8 @@ img.swiper-button-next, img.swiper-button-prev {
         color: $yellow;
         font-size: 14px;
         padding-top: 3px;
+        text-decoration: underline;
+        cursor: pointer;
       }
   }
   &__location {
@@ -174,6 +236,84 @@ img.swiper-button-next, img.swiper-button-prev {
     }
   }
 }
+
+/*call modal*/
+
+.fancybox__content {
+  padding: 26px 20px 32.49px !important;
+}
+
+button.f-button.is-close-btn {
+    display: none;
+}
+
+.call-modal {
+  display: none;
+  width: 636px;
+  padding: 26px 20px 32.49px;
+
+    &__top {
+      display: flex;
+      justify-content: space-between;
+      &--title {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 137.2%;
+        color: $dark;
+        margin-left: 9px;
+        padding-bottom: 7px;
+      }
+      &--close {
+        width: 28px;
+        height: 25.35px;
+        margin-top: 6px;
+      }
+    }
+
+    &__form {
+      &--input {
+        width: 596px;
+        padding: 13px 22px 15px;
+        height: 40px;
+        border: 1px solid $call-modal__input;
+        outline: none;
+        margin-top: 19px;
+          &::placeholder {
+            color: $dark;
+          }
+          @extend %validation;
+      }
+
+      &__bottom {
+        display: flex;
+        margin-top: 25.3px;
+        justify-content: space-between;
+
+        &__agreement {
+          input + label::before {
+            border: 1px solid $call-modal__input;
+          }
+        }
+        &--button {
+          width: 154px;
+          height: 36.21px;
+          background: $yellow;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 17px;
+          text-align: center;
+          color: $dark;
+          border: none;
+          @extend %button-behavior;
+        }
+      }
+    }
+    label.requirements {
+    height: 7px;
+}
+
+}
+
 
 /*slider for banner*/
 .swiper-banner {
@@ -466,23 +606,11 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
                 font-size: 14px;
                 outline: none;
                 border: none;
-                  &:invalid:focus {
-                    border: 1px solid $yellow;
-                    &+label{
-                      opacity: 1;
-                    }
-                  }
+
+                  @extend %validation;
                   &::placeholder {
                     color: $dark;
                   }
-              }
-              .requirements {
-                display: block;
-                color: $yellow;
-                margin-top: 7px;
-                font-size: 12px;
-                line-height: 120%;
-                opacity: 0;
               }
 
             }
@@ -490,6 +618,9 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
                 display: flex;
                 justify-content: flex-end;
                 margin-top: 32px;
+                  &__agreement--label {
+                    padding: 0 79px 0 8px;
+                  }
 
               &--submit {
                 width: 111px;
@@ -502,47 +633,6 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
                 color: $dark;
                 border: none;
                 @extend %button-behavior;
-              }
-              &__agreement {
-                display: flex;
-                align-items: center;
-
-                &--checkbox {
-                  position: absolute;
-                  z-index: -1;
-                  opacity: 0;
-                    &+label {
-                      display: inline-flex;
-                      align-items: center;
-                      cursor: pointer;
-                    }
-                    &+label::before {
-                      content: '';
-                      width: 20px;
-                      height: 20px;
-                      background-color: $white;
-                      margin-right: 8px;
-                      background-repeat: no-repeat;
-                      background-position: center center;
-                    }
-                    &:checked+label::before {
-                      border: none;
-                      background-color: $yellow;
-                      background-image: url('../../images/check.svg');
-                    }
-
-                }
-                &--label {
-                  font-weight: 400;
-                  font-size: 12px;
-                  line-height: 15px;
-                  color: $white;
-                  padding: 0 79px 0 8px;
-
-                    &:hover {
-                      text-decoration-line: underline;
-                    }
-                }
               }
             }
         }
