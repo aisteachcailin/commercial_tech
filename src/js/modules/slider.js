@@ -24,9 +24,20 @@ const swiperProduct = new Swiper('.swiper-product', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-
-  slidesPerView: 4,
   spaceBetween: 20,
+
+  breakpoints: {
+  320: {
+    slidesPerView: 4,
+    direction: 'vertical'
+  },
+  768: {
+    slidesPerView: 2
+  },
+  1280: {
+    slidesPerView: 4
+  }
+}
 
 });
 
@@ -39,8 +50,20 @@ const swiperCertificate = new Swiper('.swiper-certificate', {
     prevEl: '.swiper-button-prev',
   },
 
-  slidesPerView: 3,
-  spaceBetween: 125,
+  breakpoints: {
+  320: {
+    slidesPerView: 1
+  },
+  768: {
+    slidesPerView: 3,
+    spaceBetween: 61
+  },
+  1280: {
+    slidesPerView: 3,
+    spaceBetween: 125
+  }
+}
+
 
 });
 

@@ -357,13 +357,13 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
       width: 1240px;
         &__item {
           position: relative;
-          background-color: $white;
             &-additional-info {
               position: absolute;
               top: -13px;
               left: 141px;
               display: flex;
               justify-content: space-between;
+              text-align: center;
               width: 137px;
                 &--leasing, &--owner {
                   height: 26px;
@@ -387,6 +387,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
             &-main {
               width: 293px;
               border: 1px solid $yellow;
+              background-color: $white;
               margin-top: 13px;
                 &-text {
                   margin: 19px 24px 25px;
@@ -447,7 +448,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
         }
     }
     img.swiper-button-next, img.swiper-button-prev {
-      margin-top: 17.64px;
+      margin-top: 40px;
     }
 }
 
@@ -531,7 +532,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
       margin-top: 5px;
         &--title {
           font-weight: 500;
-          padding-bottom: 16px;
+          margin-bottom: -6px;
         }
         &__list {
           list-style: none;
@@ -683,6 +684,9 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   .container {
     max-width: 718px;
   }
+  .title {
+    font-size: 26px;
+  }
   .header {
     min-width: 768px;
     height: 183px;
@@ -779,9 +783,145 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 
 .swiper-banner, .swiper-banner__item img {
     height: 300px;
+    width: 100%;
 }
 .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
     margin-bottom: 3.9px;
+}
+
+.container-products {
+  height: 664px;
+}
+.products {
+  width: 721px;
+    &__title {
+      margin-left: 0;
+      padding-top: 40px;
+    }
+}
+.products {
+  .swiper-product {
+      margin-top: 26px;
+      width: 634px;
+      &__item {
+        &-additional-info {
+          width: 143.58px;
+            &--leasing {
+              width: 63.48px;
+            }
+            &--owner {
+              width: 69.73px;
+            }
+        }
+        &-main {
+          width: 305px;
+            &--img {
+              width: inherit;
+            }
+          &-button {
+            width: 257.05px;
+          }
+          &-text {
+            margin: 19px 24.98px 25px;
+          }
+        }
+
+      }
+  }
+  img.swiper-button-next, img.swiper-button-prev {
+    margin-top: 73px;
+  }
+}
+
+.container-certificates {
+    height: 321px;
+}
+.certificates {
+  width: 768px;
+    &__title {
+      padding: 38px 0 0 24px;
+    }
+    .swiper-certificate {
+      width: 491px;
+        &__item img {
+          height: 173px;
+          width: 123px;
+        }
+    }
+    img.swiper-button-next, img.swiper-button-prev {
+      margin: 35px 22px 0;
+    }
+}
+
+.footer {
+  .footer-grey {
+    margin-top: 46px;
+  }
+  &__feedback {
+      &--title {
+        padding-top: 38px;
+        width: 600px;
+        margin: 0 auto;
+      }
+      &--subtitle {
+        margin-top: 9px;
+        font-size: 14px;
+      }
+      &__form {
+        margin: 22px auto 0;
+        width: 635px;
+          &__fields {
+            flex-direction: column;
+              &--item {
+                width: 610px;
+                padding: 12px 0 13px 25px;
+                height: 17px;
+              }
+              .requirements {
+                display: block;
+                margin: 7px 0 5px 0;
+              }
+          }
+          &__bottom {
+            margin-top: 8px;
+              &__agreement--label {
+                padding: 0 32px 0 0;
+              }
+          }
+      }
+  }
+  &-info {
+    width: 719px;
+    padding: 46px 0 0;
+    height: 289px;
+      &__contacts {
+        height: 154.03px;
+        width: 287px;
+          &--logo {
+            width: 287px;
+            height: 35.04px;
+          }
+          &--number {
+            margin: 25.96px 0 8.03px;
+          }
+      }
+      &__media {
+        width: 361px;
+        margin-top: 4px;
+          &--title {
+            font-size: 14px;
+          }
+      }
+  }
+  &__bottom {
+    margin-top: 20px;
+      &__additional {
+        padding: 39px 0 30px;
+          td {
+            padding: 0 56px 0 0;
+          }
+      }
+  }
 }
 
 }

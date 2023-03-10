@@ -109,28 +109,25 @@
   </header>
 <div class="swiper swiper-banner">
   <div class="swiper-wrapper">
-    <div class="swiper-slide swiper-banner__item"><img src="../images/banner.png" alt=""></div>
-    <div class="swiper-slide swiper-banner__item"><img src="../images/banner.png" alt=""></div>
-    <div class="swiper-slide swiper-banner__item"><img src="../images/banner.png" alt=""></div>
-    <div class="swiper-slide swiper-banner__item"><img src="../images/banner.png" alt=""></div>
-    <div class="swiper-slide swiper-banner__item"><img src="../images/banner.png" alt=""></div>
-    <div class="swiper-slide swiper-banner__item"><img src="../images/banner.png" alt=""></div>
+    <div class="swiper-slide swiper-banner__item"><img class="swiper-banner__item--img" id="swiper-banner__item--img" src="../images/banner.png" alt=""></div>
+    <div class="swiper-slide swiper-banner__item"><img class="swiper-banner__item--img" id="swiper-banner__item--img" src="../images/banner.png" alt=""></div>
+    <div class="swiper-slide swiper-banner__item"><img class="swiper-banner__item--img" id="swiper-banner__item--img" src="../images/banner.png" alt=""></div>
+    <div class="swiper-slide swiper-banner__item"><img class="swiper-banner__item--img" id="swiper-banner__item--img" src="../images/banner.png" alt=""></div>
+    <div class="swiper-slide swiper-banner__item"><img class="swiper-banner__item--img" id="swiper-banner__item--img" src="../images/banner.png" alt=""></div>
+    <div class="swiper-slide swiper-banner__item"><img class="swiper-banner__item--img" id="swiper-banner__item--img" src="../images/banner.png" alt=""></div>
   </div>
 
   <div class="swiper-pagination"></div>
 </div>
 
     <script type="module" src="./js/main.js"></script>
-    <!-- <script>
-    let menuBtn = document.querySelector('.header__top--burger');
-let menu = document.querySelector('.menu');
-let close = document.querySelector('.close');
-menuBtn.addEventListener('click', function(){
-menu.classList.toggle('active');
-});
-close.addEventListener('click', function() {
-  menu.classList.toggle('active');
-})
-    </script> -->
+    <script>
+      if (window.innerWidth <= 991) {
+        document.getElementById("swiper-banner__item--img").src='../images/banner-tablet.png';
+      } else {
+        document.getElementById("swiper-banner__item--img").src='../images/banner.png';
+      }
+
+    </script>
   </body>
 </html>
