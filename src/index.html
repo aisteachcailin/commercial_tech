@@ -12,42 +12,47 @@
   <header class="header">
     <div class="container">
       <div class="header__top">
-        <div class="header__tablet">
+        <div class="header__adapt">
           <img class="header__logo" src="../images/header__logo.svg">
-          <div class="header__tablet__right">
+          <div class="header__mobile">
+            <img class="header__mobile--logo" src="../images/header__logo-mobile.svg">
+            <img class="header__mobile--burger burger" src="../images/burger.svg" alt="">
+          </div>
+          <p class="header__adapt--address">Нижний Новгород, ул. Ларина, 23</p>
+          <div class="header__adapt__right">
             <div class="header__call">
               <p class="header__call--number">+7 (831) 2-000-000</p>
               <span><a class="header__call--request" data-fancybox data-src="#call-modal">Заказать звонок</a></span>
             </div>
-            <img class="header__tablet__right--burger" src="../images/burger.svg" alt="">
-            <div class="header__tablet__right__menu">
-              <ul class="header__tablet__right__menu__list">
-                <li class="header__tablet__right__menu__list-item">
-                  <a class="header__tablet__right__menu__list-item--link">Каталог продукции</a>
-                  <img class="header__tablet__right__menu__list-item--arrow" src="../images/menu-arrows.svg" alt="">
+            <img class="header__adapt__right--burger burger" src="../images/burger.svg" alt="">
+            <div class="header__adapt__right__menu">
+              <ul class="header__adapt__right__menu__list">
+                <li class="header__adapt__right__menu__list-item">
+                  <a class="header__adapt__right__menu__list-item--link">Каталог продукции</a>
+                  <img class="header__adapt__right__menu__list-item--arrow" src="../images/menu-arrows.svg" alt="">
                 </li>
-                <li class="header__tablet__right__menu__list-item">
-                  <a class="header__tablet__right__menu__list-item--link">Производители</a>
-                  <img class="header__tablet__right__menu__list-item--arrow" src="../images/menu-arrows.svg" alt="">
+                <li class="header__adapt__right__menu__list-item">
+                  <a class="header__adapt__right__menu__list-item--link">Производители</a>
+                  <img class="header__adapt__right__menu__list-item--arrow" src="../images/menu-arrows.svg" alt="">
                 </li>
-                <li class="header__tablet__right__menu__list-item">
-                  <a class="header__tablet__right__menu__list-item--link">Сервисное обслуживание</a>
-                  <img class="header__tablet__right__menu__list-item--arrow" src="../images/menu-arrows.svg" alt="">
+                <li class="header__adapt__right__menu__list-item">
+                  <a class="header__adapt__right__menu__list-item--link">Сервисное обслуживание</a>
+                  <img class="header__adapt__right__menu__list-item--arrow" src="../images/menu-arrows.svg" alt="">
                 </li>
-                <li class="header__tablet__right__menu__list-item">
-                  <a class="header__tablet__right__menu__list-item--link">Акции</a>
-                  <img class="header__tablet__right__menu__list-item--arrow" src="../images/menu-arrows.svg" alt="">
+                <li class="header__adapt__right__menu__list-item">
+                  <a class="header__adapt__right__menu__list-item--link">Акции</a>
+                  <img class="header__adapt__right__menu__list-item--arrow" src="../images/menu-arrows.svg" alt="">
                 </li>
-                <li class="header__tablet__right__menu__list-item">
-                  <a class="header__tablet__right__menu__list-item--link">Услуги</a>
-                  <img class="header__tablet__right__menu__list-item--arrow" src="../images/menu-arrows.svg" alt="">
+                <li class="header__adapt__right__menu__list-item">
+                  <a class="header__adapt__right__menu__list-item--link">Услуги</a>
+                  <img class="header__adapt__right__menu__list-item--arrow" src="../images/menu-arrows.svg" alt="">
                 </li>
-                <li class="header__tablet__right__menu__list-item">
-                  <a class="header__tablet__right__menu__list-item--link">О компании</a>
-                  <img class="header__tablet__right__menu__list-item--arrow" src="../images/menu-arrows.svg" alt="">
+                <li class="header__adapt__right__menu__list-item">
+                  <a class="header__adapt__right__menu__list-item--link">О компании</a>
+                  <img class="header__adapt__right__menu__list-item--arrow" src="../images/menu-arrows.svg" alt="">
                 </li>
               </ul>
-              <img class="header__tablet__right__menu--close" src="../images/close.svg">
+              <img class="header__adapt__right__menu--close" src="../images/close.svg">
             </div>
           </div>
         </div>
@@ -58,14 +63,12 @@
             <h2 class="call-modal__top--title">Заказать звонок</h2>
             <img class="call-modal__top--close" src="../images/close.svg" data-fancybox-close>
           </div>
-          <form action="call-modal__form">
+          <form class="call-modal__form">
             <div class="input-box">
               <input type="text" class="call-modal__form--input" id="field_name" placeholder="Имя*" pattern="^[A-Za-zА-Яа-яЁё\s]+$" required>
-              <label for="field_name" class="requirements">Ошибочка вышла</label>
             </div>
             <div class="input-box">
-              <input type="text" class="call-modal__form--input" id="field_number" placeholder="Телефон*" pattern="[0-9]{11}" required>
-              <label for="field_number" class="requirements">Ошибочка вышла</label>
+              <input type="text" class="call-modal__form--input" id="field_number" placeholder="Телефон*" pattern="[0-9]{11}" require>
             </div>
             <div class="call-modal__form__bottom">
               <div class="call-modal__form__bottom__agreement form-agreement">
@@ -121,13 +124,13 @@
 </div>
 
     <script type="module" src="./js/main.js"></script>
-    <script>
+    <!-- <script>
       if (window.innerWidth <= 991) {
-        document.getElementById("swiper-banner__item--img").src='../images/banner-tablet.png';
+        document.getElementById("swiper-banner__item--img").src='../images/banner-adapt.png';
       } else {
         document.getElementById("swiper-banner__item--img").src='../images/banner.png';
       }
 
-    </script>
+    </script> -->
   </body>
 </html>

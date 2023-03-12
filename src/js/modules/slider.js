@@ -12,13 +12,12 @@ const swiperBanner = new Swiper('.swiper-banner', {
     clickable: true,
   },
 
-  slidesPerView: 1,
+  slidesPerView: 1
 
 });
 
 const swiperProduct = new Swiper('.swiper-product', {
   modules: [Navigation],
-  direction: 'horizontal',
 
   navigation: {
     nextEl: '.swiper-button-next',
@@ -32,10 +31,12 @@ const swiperProduct = new Swiper('.swiper-product', {
     direction: 'vertical'
   },
   768: {
-    slidesPerView: 2
+    slidesPerView: 2,
+    direction: 'horizontal'
   },
   1280: {
-    slidesPerView: 4
+    slidesPerView: 4,
+    direction: 'horizontal'
   }
 }
 
@@ -52,7 +53,8 @@ const swiperCertificate = new Swiper('.swiper-certificate', {
 
   breakpoints: {
   320: {
-    slidesPerView: 1
+    slidesPerView: 1,
+    spaceBetween: 0
   },
   768: {
     slidesPerView: 3,
