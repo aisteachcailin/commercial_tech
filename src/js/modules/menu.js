@@ -1,4 +1,9 @@
-export function dropdown(burger_mobile, burger_tablet, menu, close) {
+export function dropdown() {
+
+  let menu = document.querySelector('.header__adapt__right__menu');
+  let close = document.querySelector('.header__adapt__right__menu--close');
+  let burger_tablet = document.querySelector('.header__adapt__right--burger');
+  let burger_mobile = document.querySelector('.header__mobile--burger');
 
 if (burger_mobile) {
   burger_mobile.addEventListener('click', function() {
@@ -19,3 +24,5 @@ if (close) {
 }
 
 }
+
+dropdown();

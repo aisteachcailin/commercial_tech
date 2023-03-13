@@ -683,11 +683,10 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   .products__show-all {
     display: none;
   }
-  .header__mobile {
-    display: none;
-  }
-  .header__adapt--address {
-    display: none;
+  .header {
+    &__mobile, &__adapt--address {
+      display: none;
+    }
   }
 }
 /*tablet*/
