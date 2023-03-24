@@ -20,8 +20,8 @@ const swiperProduct = new Swiper('.swiper-product', {
   modules: [Navigation],
 
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.swiper-product-button-next',
+    prevEl: '.swiper-product-button-prev',
   },
   spaceBetween: 20,
 
@@ -47,8 +47,8 @@ const swiperCertificate = new Swiper('.swiper-certificate', {
   direction: 'horizontal',
 
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.swiper-certificate-button-next',
+    prevEl: '.swiper-certificate-button-prev',
   },
 
   breakpoints: {
