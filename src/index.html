@@ -22,7 +22,7 @@
           <div class="header__adapt__right">
             <div class="header__call">
               <p class="header__call--number">+7 (831) 2-000-000</p>
-              <span><a class="header__call--request" data-fancybox data-src="#call-modal">Заказать звонок</a></span>
+              <span><a class="header__call--request" data-fancybox data-src="#call-modal" data-touch='false'>Заказать звонок</a></span>
             </div>
             <img class="header__adapt__right--burger burger" src="images/burger.svg" alt="">
             <div class="header__adapt__right__menu">
@@ -131,12 +131,48 @@
   </header>
 <div class="swiper swiper-banner">
   <div class="swiper-wrapper">
-    <div class="swiper-slide swiper-banner__item"><img class="swiper-banner__item--img" id="swiper-banner__item--img" src="images/banner.png" alt=""></div>
-    <div class="swiper-slide swiper-banner__item"><img class="swiper-banner__item--img" id="swiper-banner__item--img" src="images/banner.png" alt=""></div>
-    <div class="swiper-slide swiper-banner__item"><img class="swiper-banner__item--img" id="swiper-banner__item--img" src="images/banner.png" alt=""></div>
-    <div class="swiper-slide swiper-banner__item"><img class="swiper-banner__item--img" id="swiper-banner__item--img" src="images/banner.png" alt=""></div>
-    <div class="swiper-slide swiper-banner__item"><img class="swiper-banner__item--img" id="swiper-banner__item--img" src="images/banner.png" alt=""></div>
-    <div class="swiper-slide swiper-banner__item"><img class="swiper-banner__item--img" id="swiper-banner__item--img" src="images/banner.png" alt=""></div>
+    <div class="swiper-slide swiper-banner__item">
+      <picture clas="swiper-banner__item--img">
+        <source srcset="images/banner-tablet.png" media="(max-width: 991px)">
+        <source srcset="images/banner.png">
+        <img srcset="images/banner.png" alt="My default image">
+      </picture>
+    </div>
+    <div class="swiper-slide swiper-banner__item">
+      <picture clas="swiper-banner__item--img">
+        <source srcset="images/banner.png" media="(max-width: 991px)">
+        <source srcset="images/banner.png">
+        <img srcset="images/banner.png" alt="My default image">
+      </picture>
+    </div>
+    <div class="swiper-slide swiper-banner__item">
+      <picture clas="swiper-banner__item--img">
+        <source srcset="images/banner.png" media="(max-width: 991px)">
+        <source srcset="images/banner.png">
+        <img srcset="images/banner.png" alt="My default image">
+      </picture>
+    </div>
+    <div class="swiper-slide swiper-banner__item">
+      <picture clas="swiper-banner__item--img">
+        <source srcset="images/banner-tablet.png" media="(max-width: 991px)">
+        <source srcset="images/banner.png">
+        <img srcset="images/banner.png" alt="My default image">
+      </picture>
+    </div>
+    <div class="swiper-slide swiper-banner__item">
+      <picture clas="swiper-banner__item--img">
+        <source srcset="images/banner.png" media="(max-width: 991px)">
+        <source srcset="images/banner.png">
+        <img srcset="images/banner.png" alt="My default image">
+      </picture>
+    </div>
+    <div class="swiper-slide swiper-banner__item">
+      <picture clas="swiper-banner__item--img">
+        <source srcset="images/banner.png" media="(max-width: 991px)">
+        <source srcset="images/banner.png">
+        <img srcset="images/banner.png" alt="My default image">
+      </picture>
+    </div>
   </div>
 
   <div class="swiper-pagination"></div>
@@ -384,7 +420,7 @@
               <label for="field_name" class="requirements">Введите корректное имя</label>
             </div>
             <div class="input-box">
-              <input type="text" class="footer__feedback__form__fields--item" id="field_number" placeholder="Телефон" pattern="[0-9]{11}" required>
+              <input type="text" class="footer__feedback__form__fields--item" id="fcield_number" placeholder="Телефон" pattern="[0-9]{11}" required>
               <label for="field_number" class="requirements">Введите корректный телефон</label>
             </div>
             <div class="input-box">
@@ -408,7 +444,7 @@
           <div class="footer-info">
             <div class="footer-info__contacts">
               <img class="footer-info__contacts--logo" src="images/footer__logo.svg" alt="">
-              <p class="footer-info__contacts--number">+7 (831) 2-000-000 </p>
+              <a class="footer-info__contacts--number" href="tel:+79998887766">+7 (831) 2-000-000</a>
               <p class="footer-info__contacts--address">Нижний Новгород, ул. Ларина, 23</p>
             </div>
               <div class="footer-info__media">
@@ -463,7 +499,7 @@
               </div>
               <div class="footer__bottom__additional__col-second col">
                 <p>Обратная связь</p>
-                <p><a class="footer__bottom__additional--link">feedback@agatgroup.coma</a></p>
+                <a class="footer__bottom__additional--mail" href="mailto:email@mail.ru">feedback@agatgroup.coma</a>
               </div>
               <div class="footer__bottom__additional__col-third col">
                 <p><a class="footer__bottom__additional--link">Защита персональных данных</a></p>

@@ -1,4 +1,4 @@
-function dropdown() {
+export function dropdown() {
 
   let menu = document.querySelector('.header__adapt__right__menu');
   let close = document.querySelector('.header__adapt__right__menu--close');

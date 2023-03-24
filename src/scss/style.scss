@@ -28,7 +28,7 @@ $call-modal__input: #DADADA;
 
 @mixin footer-icon($color) {
   background-color: $color;
-  border: none;
+  border-color: transparent;
 }
 
 * {
@@ -246,6 +246,7 @@ img.swiper-button-next, img.swiper-button-prev {
 
 .fancybox__content {
   padding: 26px 20px 32.49px !important;
+  cursor: auto;
 }
 
 button.f-button.is-close-btn {
@@ -522,6 +523,8 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
         margin: 49.86px 0 3px;
         font-weight: 600;
         font-size: 24px;
+        color: $white;
+        text-decoration: none;
         line-height: 29px;
       }
       &--address {
@@ -659,6 +662,9 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
             }
             .col {
               padding: 0 127px 0 0;
+            }
+            &--mail {
+              color: $white;
             }
         }
     }
@@ -951,7 +957,6 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
                 &--close {
                   margin: 31.87px 24px 0 0;
                   float: right;
-                  border-radius: 100%;
                 }
             }
         }
