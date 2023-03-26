@@ -68,6 +68,10 @@ img.swiper-button-next, img.swiper-button-prev {
   z-index: 0;
 }
 
+.swiper-horizontal, .swiper-vertical, .swiper-slide-zoomed, .swiper-scrollbar {
+  touch-action: auto;
+}
+
 /*form*/
 
 .form-agreement {
