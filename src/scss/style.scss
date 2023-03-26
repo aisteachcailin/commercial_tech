@@ -990,9 +990,6 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
 
-.container {
-  // max-width: 320px;
-}
 .container-certificates {
   height: 278px;
 }
@@ -1237,6 +1234,9 @@ button.f-button.is-close-btn {
             fill: $dark;
           }
       }
+  }
+  .swiper-wrapper {
+    overflow-y: scroll;
   }
 }
 
