@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <title>Header</title>
+    <link rel="stylesheet" href="./assets/index-e65e6250.css">
+  </head>
+  <body>
+  <header class="header">
+    <div class="container">
+      <div class="header__top">
+        <div class="header__adapt">
+          <img class="header__logo" src="images/header__logo.svg" alt="">
+          <div class="header__mobile">
+            <img class="header__mobile--logo" src="images/header__logo-mobile.svg" alt="">
+            <img class="header__mobile--burger burger" src="images/burger.svg" alt="">
+          </div>
+          <p class="header__adapt--address">Нижний Новгород, ул. Ларина, 23</p>
+          <div class="header__adapt__right">
+            <div class="header__call">
+              <p class="header__call--number">+7 (831) 2-000-000</p>
+              <span><a class="header__call--request" data-fancybox data-src="#call-modal">Заказать звонок</a></span>
+            </div>
+            <img class="header__adapt__right--burger burger" src="images/burger.svg" alt="">
+            <div class="header__adapt__right__menu">
+              <ul class="header__adapt__right__menu__list">
+                <li class="header__adapt__right__menu__list-item">
+                  <a class="header__adapt__right__menu__list-item--link">Каталог продукции</a>
+                  <img class="header__adapt__right__menu__list-item--arrow" src="images/menu-arrows.svg" alt="">
+                </li>
+                <li class="header__adapt__right__menu__list-item">
+                  <a class="header__adapt__right__menu__list-item--link">Производители</a>
+                  <img class="header__adapt__right__menu__list-item--arrow" src="images/menu-arrows.svg" alt="">
+                </li>
+                <li class="header__adapt__right__menu__list-item">
+                  <a class="header__adapt__right__menu__list-item--link">Сервисное обслуживание</a>
+                  <img class="header__adapt__right__menu__list-item--arrow" src="images/menu-arrows.svg" alt="">
+                </li>
+                <li class="header__adapt__right__menu__list-item">
+                  <a class="header__adapt__right__menu__list-item--link">Акции</a>
+                  <img class="header__adapt__right__menu__list-item--arrow" src="images/menu-arrows.svg" alt="">
+                </li>
+                <li class="header__adapt__right__menu__list-item">
+                  <a class="header__adapt__right__menu__list-item--link">Услуги</a>
+                  <img class="header__adapt__right__menu__list-item--arrow" src="images/menu-arrows.svg" alt="">
+                </li>
+                <li class="header__adapt__right__menu__list-item">
+                  <a class="header__adapt__right__menu__list-item--link">О компании</a>
+                  <img class="header__adapt__right__menu__list-item--arrow" src="images/menu-arrows.svg" alt="">
+                </li>
+              </ul>
+              <img class="header__adapt__right__menu--close" src="images/close.svg" alt="">
+            </div>
+          </div>
+        </div>
+
+        <!-- Модальное окно для заказа звонка -->
+        <div class="call-modal" id="call-modal">
+          <div class="call-modal__top">
+            <h2 class="call-modal__top--title">Заказать звонок</h2>
+            <img class="call-modal__top--close" src="images/close.svg" data-fancybox-close alt="">
+          </div>
+          <form class="call-modal__form">
+            <div class="input-box">
+              <input type="text" class="call-modal__form--input" id="field_name" placeholder="Имя*" pattern="^[A-Za-zА-Яа-яЁё\s]+$" required>
+            </div>
+            <div class="input-box">
+              <input type="text" class="call-modal__form--input" id="field_number" placeholder="Телефон*" pattern="[0-9]{11}" require>
+            </div>
+            <div class="call-modal__form__bottom">
+              <div class="call-modal__form__bottom__agreement form-agreement">
+                <input type="checkbox" class="call-modal__form__bottom__agreement--checkbox" id="agreement-modal" required>
+                <label for="agreement-modal" class="call-modal__form__bottom__agreement--label">Даю согласие на обработку персональных данных</label>
+              </div>
+              <button class="call-modal__form__bottom--button">Заказать звонок</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="header__location">
+          <img class="header__location--icon" src="images/location.svg" alt="">
+          <a class="header__location--link" href="">Минеральные Воды</a>
+        </div>
+        <form action="" class="header__search">
+          <input class="header__search--input" type="text" placeholder="Поиск по сайту">
+        </form>
+      </div>
+        <ul class="header__nav">
+          <li class="header__nav-item"><a class="header__nav-item--link" href="">Каталог продукции</a>
+            <ul class="header__nav__dropdown header__nav__dropdown--catalog">
+              <li class="header__nav__dropdown-item"><a class="header__nav__dropdown-item--link">Сельскохозяйственная техника</a></li>
+              <li class="header__nav__dropdown-item"><a class="header__nav__dropdown-item--link">Прицепная техника</a></li>
+              <li class="header__nav__dropdown-item"><a class="header__nav__dropdown-item--link">Грузовая техника</a></li>
+              <li class="header__nav__dropdown-item"><a class="header__nav__dropdown-item--link">Спецтехника</a></li>
+              <li class="header__nav__dropdown-item"><a class="header__nav__dropdown-item--link">Коммунальная техника</a></li>
+              <li class="header__nav__dropdown-item"><a class="header__nav__dropdown-item--link">Спецавтомобили</a></li>
+              <li class="header__nav__dropdown-item"><a class="header__nav__dropdown-item--link">Микроавтобусы</a></li>
+            </ul>
+          </li>
+          <li class="header__nav-item"><a class="header__nav-item--link" href="">Бренды</a>
+            <ul class="header__nav__dropdown header__nav__dropdown--brands">
+              <li class="header__nav__dropdown-item"><a class="header__nav__dropdown-item--link">Сельскохозяйственная техника</a></li>
+              <li class="header__nav__dropdown-item"><a class="header__nav__dropdown-item--link">Прицепная техника</a></li>
+              <li class="header__nav__dropdown-item"><a class="header__nav__dropdown-item--link">Грузовая техника</a></li>
+              <li class="header__nav__dropdown-item"><a class="header__nav__dropdown-item--link">Спецтехника</a></li>
+              <li class="header__nav__dropdown-item"><a class="header__nav__dropdown-item--link">Коммунальная техника</a></li>
+              <li class="header__nav__dropdown-item"><a class="header__nav__dropdown-item--link">Спецавтомобили</a></li>
+              <li class="header__nav__dropdown-item"><a class="header__nav__dropdown-item--link">Микроавтобусы</a></li>
+            </ul>
+          </li>
+          <li class="header__nav-item"><a class="header__nav-item--link" href="">Сервис и запасные части</a></li>
+          <li class="header__nav-item"><a class="header__nav-item--link" href="">Акции</a>
+            <ul class="header__nav__dropdown header__nav__dropdown--promotions">
+              <li class="header__nav__dropdown-item"><a class="header__nav__dropdown-item--link">Сельскохозяйственная техника</a></li>
+              <li class="header__nav__dropdown-item"><a class="header__nav__dropdown-item--link">Прицепная техника</a></li>
+              <li class="header__nav__dropdown-item"><a class="header__nav__dropdown-item--link">Грузовая техника</a></li>
+              <li class="header__nav__dropdown-item"><a class="header__nav__dropdown-item--link">Спецтехника</a></li>
+              <li class="header__nav__dropdown-item"><a class="header__nav__dropdown-item--link">Коммунальная техника</a></li>
+              <li class="header__nav__dropdown-item"><a class="header__nav__dropdown-item--link">Спецавтомобили</a></li>
+              <li class="header__nav__dropdown-item"><a class="header__nav__dropdown-item--link">Микроавтобусы</a></li>
+            </ul>
+          </li>
+          <li class="header__nav-item"><a class="header__nav-item--link" href="">Услуги</a></li>
+          <li class="header__nav-item"><a class="header__nav-item--link" href="">О компании</a></li>
+          <li class="header__nav-item"><a class="header__nav-item--link" href="">Контакты</a></li>
+        </ul>
+    </div>
+  </header>
+<div class="swiper swiper-banner">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide swiper-banner__item">
+      <picture clas="swiper-banner__item--img">
+        <source srcset="images/banner-tablet.png" media="(max-width: 991px)">
+        <source srcset="images/banner.png">
+        <img srcset="images/banner.png" alt="My default image">
+      </picture>
+    </div>
+    <div class="swiper-slide swiper-banner__item">
+      <picture clas="swiper-banner__item--img">
+        <source srcset="images/banner.png" media="(max-width: 991px)">
+        <source srcset="images/banner.png">
+        <img srcset="images/banner.png" alt="My default image">
+      </picture>
+    </div>
+    <div class="swiper-slide swiper-banner__item">
+      <picture clas="swiper-banner__item--img">
+        <source srcset="images/banner.png" media="(max-width: 991px)">
+        <source srcset="images/banner.png">
+        <img srcset="images/banner.png" alt="My default image">
+      </picture>
+    </div>
+    <div class="swiper-slide swiper-banner__item">
+      <picture clas="swiper-banner__item--img">
+        <source srcset="images/banner-tablet.png" media="(max-width: 991px)">
+        <source srcset="images/banner.png">
+        <img srcset="images/banner.png" alt="My default image">
+      </picture>
+    </div>
+    <div class="swiper-slide swiper-banner__item">
+      <picture clas="swiper-banner__item--img">
+        <source srcset="images/banner.png" media="(max-width: 991px)">
+        <source srcset="images/banner.png">
+        <img srcset="images/banner.png" alt="My default image">
+      </picture>
+    </div>
+    <div class="swiper-slide swiper-banner__item">
+      <picture clas="swiper-banner__item--img">
+        <source srcset="images/banner.png" media="(max-width: 991px)">
+        <source srcset="images/banner.png">
+        <img srcset="images/banner.png" alt="My default image">
+      </picture>
+    </div>
+  </div>
+
+  <div class="swiper-pagination"></div>
+</div>
+
+<div class="container-products">
+  <div class="products">
+    <h3 class="products__title title">Товар дня</h3>
+    <!-- Slider main container -->
+    <div class="swiper swiper-product">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <div class="swiper-product__item">
+            <div class="swiper-product__item-additional-info">
+              <div class="swiper-product__item-additional-info--leasing">Лизинг</div>
+              <div class="swiper-product__item-additional-info--owner">1 Хозяин</div>
+              <div class="swiper-product__item-additional-info--promotion">Акция</div>
+              <div class="swiper-product__item-additional-info--new">Новинка</div>
+            </div>
+            <div class="swiper-product__item-main">
+              <img class="swiper-product__item-main--img" src="images/DAEWOO NOVUS.png" alt="">
+              <div class="swiper-product__item-main-text">
+                <h4 class="swiper-product__item-main--title">ГАЗ Промтоварный фургон на базе ГАЗон NEXT</h4>
+                <p class="swiper-product__item-main--description">Шасси, 5.9 л / 270 л. с., Задний привод, МКПП, Дизельный</p>
+                <div class="swiper-product__item-main-prices"></div>
+                <div class="swiper-product__item-main-availability">
+                  <img class="swiper-product__item-main-availability--cart" src="images/cart.svg" alt="">
+                  <p class="swiper-product__item-main-availability--text">Доступна для заказа</p>
+                </div>
+                <button class="swiper-product__item-main-button">Узнать цену
+                  <img class="swiper-product__item-main-button--arrow" src="images/button__arrow.svg" alt="">
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="swiper-product__item">
+            <div class="swiper-product__item-additional-info">
+              <div class="swiper-product__item-additional-info--leasing">Лизинг</div>
+              <div class="swiper-product__item-additional-info--owner">1 Хозяин</div>
+              <div class="swiper-product__item-additional-info--promotion">Акция</div>
+              <div class="swiper-product__item-additional-info--new">Новинка</div>
+            </div>
+            <div class="swiper-product__item-main">
+              <img class="swiper-product__item-main--img" src="images/Самосвал.png" alt="">
+              <div class="swiper-product__item-main-text">
+                <h4 class="swiper-product__item-main--title">ГАЗ Промтоварный фургон на базе ГАЗон NEXT</h4>
+                <p class="swiper-product__item-main--description">Шасси, 5.9 л / 270 л. с., Задний привод, МКПП, Дизельный</p>
+                <div class="swiper-product__item-main-prices">
+                  <p class="swiper-product__item-main-prices--new">6 239 000 Р</p>
+                  <s class="swiper-product__item-main-prices--old">7 239 000 Р</s>
+                </div>
+                <div class="swiper-product__item-main-availability">
+                  <img class="swiper-product__item-main-availability--cart" src="images/cart.svg" alt="">
+                  <p class="swiper-product__item-main-availability--text">Доступна для заказа</p>
+                </div>
+                <button class="swiper-product__item-main-button">Оставить заявку
+                  <img class="swiper-product__item-main-button--arrow" src="images/button__arrow.svg" alt="">
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="swiper-product__item">
+            <div class="swiper-product__item-additional-info">
+              <div class="swiper-product__item-additional-info--leasing">Лизинг</div>
+              <div class="swiper-product__item-additional-info--owner">1 Хозяин</div>
+              <div class="swiper-product__item-additional-info--promotion">Акция</div>
+              <div class="swiper-product__item-additional-info--new">Новинка</div>
+            </div>
+            <div class="swiper-product__item-main">
+              <img class="swiper-product__item-main--img" src="images/DAEWOO NOVUS.png" alt="">
+              <div class="swiper-product__item-main-text">
+                <h4 class="swiper-product__item-main--title">ГАЗ Промтоварный фургон на базе ГАЗон NEXT</h4>
+                <p class="swiper-product__item-main--description">Шасси, 5.9 л / 270 л. с., Задний привод, МКПП, Дизельный</p>
+                <div class="swiper-product__item-main-prices"></div>
+                <div class="swiper-product__item-main-availability">
+                  <img class="swiper-product__item-main-availability--cart" src="images/cart.svg" alt="">
+                  <p class="swiper-product__item-main-availability--text">Доступна для заказа</p>
+                </div>
+                <button class="swiper-product__item-main-button">Узнать цену
+                  <img class="swiper-product__item-main-button--arrow" src="images/button__arrow.svg" alt="">
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="swiper-product__item">
+            <div class="swiper-product__item-additional-info">
+              <div class="swiper-product__item-additional-info--leasing">Лизинг</div>
+              <div class="swiper-product__item-additional-info--owner">1 Хозяин</div>
+              <div class="swiper-product__item-additional-info--promotion">Акция</div>
+              <div class="swiper-product__item-additional-info--new">Новинка</div>
+            </div>
+            <div class="swiper-product__item-main">
+              <img class="swiper-product__item-main--img" src="images/Самосвал.png" alt="">
+              <div class="swiper-product__item-main-text">
+                <h4 class="swiper-product__item-main--title">ГАЗ Промтоварный фургон на базе ГАЗон NEXT</h4>
+                <p class="swiper-product__item-main--description">Шасси, 5.9 л / 270 л. с., Задний привод, МКПП, Дизельный</p>
+                <div class="swiper-product__item-main-prices">
+                  <p class="swiper-product__item-main-prices--new">6 239 000 Р</p>
+                  <s class="swiper-product__item-main-prices--old">7 239 000 Р</s>
+                </div>
+                <div class="swiper-product__item-main-availability">
+                  <img class="swiper-product__item-main-availability--cart" src="images/cart.svg" alt="">
+                  <p class="swiper-product__item-main-availability--text">Доступна для заказа</p>
+                </div>
+                <button class="swiper-product__item-main-button">Оставить заявку
+                  <img class="swiper-product__item-main-button--arrow" src="images/button__arrow.svg" alt="">
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="swiper-product__item">
+            <div class="swiper-product__item-additional-info">
+              <div class="swiper-product__item-additional-info--leasing">Лизинг</div>
+              <div class="swiper-product__item-additional-info--owner">1 Хозяин</div>
+              <div class="swiper-product__item-additional-info--promotion">Акция</div>
+              <div class="swiper-product__item-additional-info--new">Новинка</div>
+            </div>
+            <div class="swiper-product__item-main">
+              <img class="swiper-product__item-main--img" src="images/DAEWOO NOVUS.png" alt="">
+              <div class="swiper-product__item-main-text">
+                <h4 class="swiper-product__item-main--title">ГАЗ Промтоварный фургон на базе ГАЗон NEXT</h4>
+                <p class="swiper-product__item-main--description">Шасси, 5.9 л / 270 л. с., Задний привод, МКПП, Дизельный</p>
+                <div class="swiper-product__item-main-prices"></div>
+                <div class="swiper-product__item-main-availability">
+                  <img class="swiper-product__item-main-availability--cart" src="images/cart.svg" alt="">
+                  <p class="swiper-product__item-main-availability--text">Доступна для заказа</p>
+                </div>
+                <button class="swiper-product__item-main-button">Узнать цену
+                  <img class="swiper-product__item-main-button--arrow" src="images/button__arrow.svg" alt="">
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="swiper-product__item">
+            <div class="swiper-product__item-additional-info">
+              <p class="swiper-product__item-additional-info--leasing">Лизинг</p>
+              <div class="swiper-product__item-additional-info--owner">1 Хозяин</div>
+              <div class="swiper-product__item-additional-info--promotion">Акция</div>
+              <div class="swiper-product__item-additional-info--new">Новинка</div>
+            </div>
+            <div class="swiper-product__item-main">
+              <img class="swiper-product__item-main--img" src="images/Самосвал.png" alt="">
+              <div class="swiper-product__item-main-text">
+                <h4 class="swiper-product__item-main--title">ГАЗ Промтоварный фургон на базе ГАЗон NEXT</h4>
+                <p class="swiper-product__item-main--description">Шасси, 5.9 л / 270 л. с., Задний привод, МКПП, Дизельный</p>
+                <div class="swiper-product__item-main-prices">
+                  <p class="swiper-product__item-main-prices--new">6 239 000 Р</p>
+                  <s class="swiper-product__item-main-prices--old">7 239 000 Р</s>
+                </div>
+                <div class="swiper-product__item-main-availability">
+                  <img class="swiper-product__item-main-availability--cart" src="images/cart.svg" alt="">
+                  <p class="swiper-product__item-main-availability--text">Доступна для заказа</p>
+                </div>
+                <button class="swiper-product__item-main-button">Оставить заявку
+                  <img class="swiper-product__item-main-button--arrow" src="images/button__arrow.svg" alt="">
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img class="swiper-product-button-prev swiper-button-prev" src="images/product-slider__arrow.svg" alt="">
+    <img class="swiper-product-button-next swiper-button-next" src="images/product-slider__arrow.svg" alt="">
+
+    <button class="products__show-all">Показать все
+      <svg class="products__show-all--arrow" width="5.5" height="10.5" viewBox="0 0 6 11">
+        <path d="M0.461568 0.477899C0.749917 0.180531 1.22473 0.173219 1.5221 0.461568L5.06902 3.90091C5.97699 4.78134 5.97699 6.21866 5.06902 7.09909L1.5221 10.5384C1.22474 10.8268 0.749918 10.8195 0.461569 10.5221C0.17322 10.2247 0.180531 9.74992 0.477899 9.46157L4.02482 6.02222L4.48811 6.50001L4.02482 6.02222C4.32506 5.73109 4.32506 5.26891 4.02482 4.97777L0.477899 1.53843C0.180531 1.25008 0.173219 0.775267 0.461568 0.477899Z"/>
+      </svg>
+    </button>
+  </div>
+</div>
+
+<div class="container-certificates">
+  <div class="certificates">
+    <h3 class="certificates__title title">Сертификаты</h3>
+    <!-- Slider main container -->
+    <div class="swiper swiper-certificate">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <div class="swiper-certificate__item">
+            <a data-fancybox data-src="#certificate1"><img src="images/certificate1.png" alt=""></a>
+          </div>
+          <div class="certificate-modal" id="certificate1">
+            <img src="images/certificate1.png" alt="">
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="swiper-certificate__item">
+              <a data-fancybox data-src="#certificate2"><img src="images/certificate2.png" alt=""></a>
+          </div>
+          <div class="certificate-modal" id="certificate2">
+            <img src="images/certificate2.png" alt="">
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="swiper-certificate__item">
+              <a data-fancybox data-src="#certificate3"><img src="images/certificate3.png" alt=""></a>
+          </div>
+          <div class="certificate-modal" id="certificate3">
+            <img src="images/certificate3.png" alt="">
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="swiper-certificate__item">
+            <a data-fancybox data-src="#certificate4"><img src="images/certificate1.png" alt=""></a>
+          </div>
+          <div class="certificate-modal" id="certificate4">
+            <img src="images/certificate1.png" alt="">
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="swiper-certificate__item">
+              <a data-fancybox data-src="#certificate5"><img src="images/certificate2.png" alt=""></a>
+          </div>
+          <div class="certificate-modal" id="certificate5">
+            <img src="images/certificate2.png" alt="">
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="swiper-certificate__item">
+              <a data-fancybox data-src="#certificate6"><img src="images/certificate3.png" alt=""></a>
+          </div>
+          <div class="certificate-modal" id="certificate6">
+            <img src="images/certificate3.png" alt="">
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <img class="swiper-certificate-button-prev swiper-button-prev" src="images/product-slider__arrow.svg" alt="">
+    <img class="swiper-certificate-button-next swiper-button-next" src="images/product-slider__arrow.svg" alt="">
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-grey">
+      <div class="footer__feedback container">
+        <h2 class="footer__feedback--title title">Остались вопросы? С удовольствием ответим на них</h2>
+        <p class="footer__feedback--subtitle">Заполните форму обратной связи и наш сотрудник свяжется с вами в ближайшее время.</p>
+        <form action="" class="footer__feedback__form">
+          <div class="footer__feedback__form__fields">
+            <div class="input-box">
+              <input type="text" class="footer__feedback__form__fields--item" id="field_name" placeholder="Имя" pattern="^[A-Za-zА-Яа-яЁё\s]+$" required>
+              <label for="field_name" class="requirements">Введите корректное имя</label>
+            </div>
+            <div class="input-box">
+              <input type="text" class="footer__feedback__form__fields--item" id="fcield_number" placeholder="Телефон" pattern="[0-9]{11}" required>
+              <label for="field_number" class="requirements">Введите корректный телефон</label>
+            </div>
+            <div class="input-box">
+              <input type="email" class="footer__feedback__form__fields--item" id="field_email" placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}" required>
+              <label for="field_email" class="requirements">Введите корректный E-mail</label>
+            </div>
+          </div>
+          <div class="footer__feedback__form__bottom">
+            <div class="footer__feedback__form__bottom__agreement form-agreement">
+              <input type="checkbox" class="footer__feedback__form__bottom__agreement--checkbox" id="agreement-footer" required>
+              <label for="agreement-footer" class="footer__feedback__form__bottom__agreement--label">Даю согласие на обработку персональных данных</label>
+            </div>
+            <button type="submit" class="footer__feedback__form__bottom--submit">Отправить</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bc">
+      <div class="footer-bc-blur">
+        <div class="container">
+          <div class="footer-info">
+            <div class="footer-info__contacts">
+              <img class="footer-info__contacts--logo" src="images/footer__logo.svg" alt="">
+              <a class="footer-info__contacts--number" href="tel:+79998887766">+7 (831) 2-000-000</a>
+              <p class="footer-info__contacts--address">Нижний Новгород, ул. Ларина, 23</p>
+            </div>
+              <div class="footer-info__media">
+                <div class="footer-info__media__messengers">
+                    <h3 class="footer-info__media--title">Мы в мессенджерах:</h3>
+                    <ol class="footer-info__media__list">
+                      <li class="footer-info__media__item">
+                        <iframe class="footer-info__media__item--icon telegram" src="images/Telegram.svg" frameborder="0"></iframe>
+                        <p class="footer-info__media__item--name">Telegram</p>
+                      </li>
+                      <li class="footer-info__media__item">
+                        <iframe class="footer-info__media__item--icon whatsapp" src="images/WhatsApp.svg" frameborder="0"></iframe>
+                        <p class="footer-info__media__item--name" >WhatsApp</p>
+                      </li>
+                      <li class="footer-info__media__item">
+                        <iframe class="footer-info__media__item--icon viber" src="images/Viber.svg" frameborder="0"></iframe>
+                        <p class="footer-info__media__item--name" >Viber</p>
+                      </li>
+                    </ol>
+                  </div>
+
+                  <div class="footer-info__media__social">
+                    <h3 class="footer-info__media--title">Мы в социальных сетях:</h3>
+                    <ol class="footer-info__media__list">
+                      <li class="footer-info__media__item">
+                        <iframe class="footer-info__media__item--icon telegram" src="images/Telegram.svg" frameborder="0"></iframe>
+                        <p class="footer-info__media__item--name">Telegram</p>
+                      </li>
+                      <li class="footer-info__media__item">
+                        <iframe class="footer-info__media__item--icon vk" src="images/Вконтакте.svg" frameborder="0"></iframe>
+                        <p class="footer-info__media__item--name" >Вконтакте</p>
+                      </li>
+                      <li class="footer-info__media__item">
+                        <iframe class="footer-info__media__item--icon youtube" src="images/YouTube.svg" frameborder="0"></iframe>
+                        <p class="footer-info__media__item--name" >YouTube</p>
+                      </li>
+                      <li class="footer-info__media__item">
+                        <iframe class="footer-info__media__item--icon yandexdzen" src="images/ЯндексДзен.svg" frameborder="0"></iframe>
+                        <p class="footer-info__media__item--name" >ЯндексДзен</p>
+                      </li>
+                    </ol>
+                  </div>
+              </div>
+            </div>
+
+          <div class="footer__bottom">
+            <p class="footer__bottom--text">Вся представленная на сайте информация, касающаяся автомобилей и сервисного обслуживания, носит информационный характер и не является публичной офертой, определяемой положениями ст. 437 (2) ГК РФ. Все цены и спецпредложения, указанные на данном сайте носят исключительно информационный характер и являются максимально рекомендуемыми розничными ценами и спецпредложениями по расчетам дистрибьюторов и могут отличаться от цен других дилеров. Для получения одробной информации просьба обращаться в ДЦ компании АГАТ. Опубликованная на данном сайте информация может быть изменена в любое время без предварительного уведомления.</p>
+            <div class="footer__bottom__additional">
+              <div class="footer__bottom__additional__col-first col">
+                <p>© ООО «ТД «Агат» 2008—2022</p>
+                <p>Все права защищены</p>
+              </div>
+              <div class="footer__bottom__additional__col-second col">
+                <p>Обратная связь</p>
+                <a class="footer__bottom__additional--mail" href="mailto:email@mail.ru">feedback@agatgroup.coma</a>
+              </div>
+              <div class="footer__bottom__additional__col-third col">
+                <p><a class="footer__bottom__additional--link">Защита персональных данных</a></p>
+                <p><a class="footer__bottom__additional--link">Юридическая информация</a></p>
+              </div>
+              <div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+</footer>
+
+
+<script src="./assets/index-51e60ee2.js"></script>
+  </body>
+</html>
