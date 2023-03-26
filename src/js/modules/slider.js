@@ -29,7 +29,7 @@ const swiperProduct = new Swiper('.swiper-product', {
   320: {
     slidesPerView: 4,
     direction: 'vertical',
-    touchReleaseOnEdges: 'true'
+    touchReleaseOnEdges: 'false'
   },
   768: {
     slidesPerView: 2,
