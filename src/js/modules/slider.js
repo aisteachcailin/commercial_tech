@@ -28,7 +28,8 @@ const swiperProduct = new Swiper('.swiper-product', {
   breakpoints: {
   320: {
     slidesPerView: 4,
-    direction: 'vertical'
+    direction: 'vertical',
+    touchReleaseOnEdges: 'true'
   },
   768: {
     slidesPerView: 2,
