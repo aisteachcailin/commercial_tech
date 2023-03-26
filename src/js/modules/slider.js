@@ -29,9 +29,7 @@ const swiperProduct = new Swiper('.swiper-product', {
   320: {
     slidesPerView: 4,
     direction: 'vertical',
-allowTouchMove: 'false',
-noSwiping: 'true',
-preventInteractionOnTransition: 'true'
+    allowTouchMove: false
   },
   768: {
     slidesPerView: 2,
