@@ -1235,8 +1235,9 @@ button.f-button.is-close-btn {
           }
       }
   }
-  .swiper-wrapper {
-    overflow-y: scroll;
+
+  .swiper-vertical {
+    touch-action: auto;
   }
 }
 
