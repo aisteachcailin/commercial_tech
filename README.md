@@ -1,1 +1,1 @@
-Ссылка: https://aisteachcailin.github.io/commercial_tech/dist/
+https://aisteachcailin.github.io/commercial_tech/dist/
